@@ -37,7 +37,7 @@ export const EntryProvider: React.FC<{children : ReactNode}> = ({children}) => {
         setEntries(e => e.filter(entry => entry.id != id))
     }
     return (
-        <EntryContext.Provider value={{ entries, saveEntry, updateEntry, deleteEntry }}>
+        <EntryContext.Provider value={{ entries, saveEntry, updateEntry, deleteEntry}}>
           {children}
         </EntryContext.Provider>
       )
